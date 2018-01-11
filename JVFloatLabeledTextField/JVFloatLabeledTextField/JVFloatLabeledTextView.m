@@ -186,8 +186,8 @@ static CGFloat const kFloatingLabelHideAnimationDuration = 0.3f;
     [self setLabelOriginForTextAlignment];
     
     BOOL firstResponder = self.isFirstResponder;
-    _floatingLabel.textColor = (firstResponder && self.text && self.text.length > 0 ?
-                                self.labelActiveColor : self.floatingLabelTextColor);
+    //_floatingLabel.textColor = (firstResponder && self.text && self.text.length > 0 ?
+    //                            self.labelActiveColor : self.floatingLabelTextColor);
     if ((!self.text || 0 == [self.text length]) && !self.alwaysShowFloatingLabel) {
         [self hideFloatingLabel:firstResponder];
     }
